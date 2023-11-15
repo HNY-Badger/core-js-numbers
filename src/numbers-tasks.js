@@ -496,11 +496,7 @@ function getIntegerOnString(str, base) {
  * 2 ** 53  => false
  */
 function isSafeInteger(number) {
-  return (
-    Number.isInteger(number) &&
-    number < Number.MAX_SAFE_INTEGER &&
-    Number.MIN_SAFE_INTEGER < number
-  );
+  return Number.isSafeInteger(number);
 }
 
 /**
