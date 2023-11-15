@@ -370,7 +370,7 @@ function numberToStringInBase(number, base) {
  * 12345, 2    => '1.23e+4'
  */
 function toExponential(number, fractionDigit) {
-  return number.toExponential(fractionDigit); // Found later :/
+  return number.toExponential(fractionDigit);
 }
 
 /**
@@ -384,8 +384,8 @@ function toExponential(number, fractionDigit) {
  * 12345, 2    => '12345.00'
  * 12.345, 1   => '12.3'
  */
-function toFixed(/* number, fractionDigits */) {
-  throw new Error('Not implemented');
+function toFixed(number, fractionDigits) {
+  return number.toFixed(fractionDigits);
 }
 
 /**
